@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Alegreya Sans", sans-serif;
+}
+
+body {
+    background-color: #C1E59F;
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 100px;
+    margin-right: 16px;
+}
+
+header h1 {
+    color: #141414;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.container {
+    background-color: #B6E08F;
+    border-radius: 10px;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    max-width: 640px;
+    width: 100%;
+    margin-bottom: 56px;
+    gap: 30px;
+    position: relative;
+}
+
+form input::placeholder {
+    color: #BDD2A6; 
+}
+
+form input {
+    background-color: #141414;
+    color: #BDD2A6 !important;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    padding: 8px;
+    margin-bottom: 8px;
+}
+
+form button {
+    background-color: #141414;
+    color: #BDD2A6;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #141414;
+    padding: 10px;
+    background-color: #B6E08F;
+    border: 2px solid #B6E08F;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover {
+    background-color: #B6E08F;
+    transform: scale(1.02);
+}
+
+.checkbox-tarefa {
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #141414;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-tarefa:checked {
+    background-color: #141414;
+    border-color: #B6E08F;
+}
+
+.checkbox-tarefa:checked::after {
+    content: '✔'; 
+    color: #B6E08F;
+    font-size: 17px;
+    position: absolute;
+    top: 0;
+    left: 3px;
+}
+
+ul li span {
+    margin-left: 12px;
+    color: #141414;
+}
+
+ul li .concluida {
+    text-decoration: line-through;
+    color: #141414;
+}
+
+ul li.concluida {
+    background-color: #B6E08F
+}
